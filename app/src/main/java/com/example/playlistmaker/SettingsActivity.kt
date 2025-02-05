@@ -11,7 +11,9 @@ class SettingsActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_settings)
+
         val backButton = findViewById<View>(R.id.back_button)
+
         backButton.setOnClickListener {
             val backIntent = Intent(this, MainActivity::class.java)
             startActivity(backIntent)
